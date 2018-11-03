@@ -1,0 +1,9 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": { "ecmaVersion": 3 },
+  "env": { "commonjs": true, "mocha": true },
+  "rules": {
+    "quotes": [ "error", "single" ],
+    "semi": [ "error", "always" ]
+  }
+}
