@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --colors test/**/*.spec.js",
+    "test": "mocha --colors src/**/*.spec.js",
     "start": "pm2 start ecosystem.config.js",
     "stop": "pm2 kill"
   },
