@@ -15,8 +15,15 @@ describe.only('rpn.js', function () {
       expect(rpn([12])).to.be(12);
     });
 
-    it('should evaluate expressions with `sum` operator', function () {
+    it('should evaluate sum expressions', function () {
       expect(rpn([1, 2, '+'])).to.be(3);
+      expect(rpn([0, 2, '+'])).to.be(2);
+      expect(rpn([1, 0, '+'])).to.be(1);
+      expect(rpn([0, 0, '+'])).to.be(0);
     });
+
+    it('should evalueate substract expressions', function () {
+      expect(rpn([5, 2, '-'])).to.be(3);
+    })
   });
 });
