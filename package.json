@@ -2,11 +2,8 @@
   "name": "jstraining",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "mocha --colors src/**/*.spec.js",
-    "start": "pm2 start ecosystem.config.js",
-    "stop": "pm2 kill"
+    "test": "mocha --colors src/**/*.spec.js"
   },
   "keywords": [],
   "author": "",
