@@ -1,14 +1,26 @@
 var rpn = function (expr) {
   if (expr.length === 1) { return expr[0]; }
 
-  var left = expr[0];
-  var right = expr[1];
-  var op = expr[2];
+  var stack = [];
 
-  if (op === '+') { return left + right; }
-  if (op === '-') { return left - right; }
-  if (op === '*') { return left * right; }
-  if (op === '/') { return left / right; }
+  for (var i = 0; i < expr.length; i++) {
+    var token = expr[i];
+
+    if (typeof token === 'number') {
+      stack.push(token);
+      continue;
+    }
+
+    var right = stack.pop();
+    var left = stack.pop();
+
+    if (token === '+') { stack.push(left + right); }
+    if (token === '*') { stack.push(left * right); }
+    if (token === '/') { stack.push(left / right); }
+    if (token === '-') { stack.push(left - right); }
+  }
+
+  return stack.pop();
 };
 
 module.exports = rpn;

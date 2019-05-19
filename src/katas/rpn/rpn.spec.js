@@ -47,6 +47,13 @@ describe.only('rpn.js', function () {
 
     it('should evaluate nested expressions', function () {
       expect(rpn([1, 2, '+', 3, '+'])).to.be(6);
+      expect(rpn([2, 3, '+', 4, '-'])).to.be(1);
+      expect(rpn([2, 3, '+', 4, '*', 5, '-', 3, '/'])).to.be(5);
+      expect(rpn([3, 5, 8, '*', 7, '+', '*'])).to.be(141);
+    });
+
+    it('should evaluate square root expressions', function () {
+      expect(rpn([9, 'SQRT'])).to.be(3);
     });
   });
 });
