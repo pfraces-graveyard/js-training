@@ -22,8 +22,15 @@ describe.only('rpn.js', function () {
       expect(rpn([0, 0, '+'])).to.be(0);
     });
 
-    it('should evalueate substract expressions', function () {
+    it('should evalueate substraction expressions', function () {
       expect(rpn([5, 2, '-'])).to.be(3);
-    })
+      expect(rpn([2, 0, '-'])).to.be(2);
+      expect(rpn([0, 1, '-'])).to.be(-1);
+      expect(rpn([2, 5, '-'])).to.be(-3);
+    });
+
+    it('should evaluate multiplication expressions', function () {
+      expect(rpn([3, 4, '*'])).to.be(12);
+    });
   });
 });
