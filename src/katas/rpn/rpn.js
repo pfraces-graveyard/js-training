@@ -13,6 +13,13 @@ var rpn = function (expr) {
       continue;
     }
 
+    // variadic operators
+
+    if (token === 'MAX') {
+      stack.push(Math.max.apply(null, stack.splice(0, stack.length)));
+      continue;
+    }
+
     // unary operators
 
     if (token === 'SQRT') {

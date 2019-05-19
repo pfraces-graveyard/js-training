@@ -59,6 +59,8 @@ describe.only('rpn.js', function () {
 
     it('should evaluate max expressions', function () {
       expect(rpn([1, 'MAX'])).to.be(1);
+      expect(rpn([1, 3, 2, 'MAX'])).to.be(3);
+      expect(rpn([2, 4, 3, '+', 5, 'MAX', 3, '*'])).to.be(21);
     });
   });
 });
