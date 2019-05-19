@@ -6,10 +6,21 @@ var rpn = function (expr) {
   for (var i = 0; i < expr.length; i++) {
     var token = expr[i];
 
+    // litaral expressions
+
     if (typeof token === 'number') {
       stack.push(token);
       continue;
     }
+
+    // unary operators
+
+    if (token === 'SQRT') {
+      stack.push(Math.sqrt(stack.pop()));
+      continue;
+    }
+
+    // binary operators
 
     var right = stack.pop();
     var left = stack.pop();

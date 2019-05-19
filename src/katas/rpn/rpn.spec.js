@@ -54,6 +54,11 @@ describe.only('rpn.js', function () {
 
     it('should evaluate square root expressions', function () {
       expect(rpn([9, 'SQRT'])).to.be(3);
+      expect(rpn([9, 'SQRT', 16, 'SQRT', '+'])).to.be(7);
+    });
+
+    it('should evaluate max expressions', function () {
+      expect(rpn([1, 'MAX'])).to.be(1);
     });
   });
 });
