@@ -31,6 +31,15 @@ describe.only('rpn.js', function () {
 
     it('should evaluate multiplication expressions', function () {
       expect(rpn([3, 4, '*'])).to.be(12);
+      expect(rpn([2, 0, '*'])).to.be(0);
+      expect(rpn([0, 3, '*'])).to.be(0);
+      expect(rpn([2, -3, '*'])).to.be(-6);
+      expect(rpn([-2, 3, '*'])).to.be(-6);
+      expect(rpn([-2, -3, '*'])).to.be(6);
+    });
+
+    it('should evaluate division expressions', function () {
+      expect(rpn([12, 4, '/'])).to.be(3);
     });
   });
 });

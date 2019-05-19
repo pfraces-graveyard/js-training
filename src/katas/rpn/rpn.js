@@ -7,6 +7,7 @@ var rpn = function (expr) {
 
   if (op === '+') { return left + right; }
   if (op === '-') { return left - right; }
+  if (op === '*') { return left * right; }
 };
 
 module.exports = rpn;
