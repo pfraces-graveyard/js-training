@@ -1,5 +1,5 @@
 var expect = require('expect.js');
-var sum = require('../src/sum.js');
+var sum = require('./sum.js');
 
 describe('sum', function () {
   it('should sum positive numbers', function () {
