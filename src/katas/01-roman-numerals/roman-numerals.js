@@ -50,8 +50,4 @@ var romanNumerals = function (n) {
     return romanNumber;
 };
 
-
-
-console.log(romanNumerals(8));
-
 module.exports = romanNumerals;

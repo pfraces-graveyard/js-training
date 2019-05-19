@@ -1,5 +1,5 @@
-002 Unit Tests
-==============
+Unit Tests
+==========
 
 ```
 npm install mocha expect.js

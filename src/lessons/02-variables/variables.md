@@ -1,5 +1,5 @@
-102 Variables (Bindings)
-========================
+Variables (Bindings)
+====================
 
 `var`, `let` and `const`
 ------------------------

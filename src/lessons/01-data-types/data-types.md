@@ -1,5 +1,5 @@
-101 Data Types, Expressions and Statements
-==========================================
+Data Types, Expressions and Statements
+======================================
 
 Static and Dynamic Typed Languages
 ----------------------------------

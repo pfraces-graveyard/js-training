@@ -7,12 +7,6 @@ var fizzbuzz = function (num) {
   return num;
 };
 
-var demo = function(){
-  for (let index = 0; index < 20; index++) {
-   console.log(fizzbuzz(index+1));
-  }
-}
-
 function toStr(num) {
   return num.toString();
 }
