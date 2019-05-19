@@ -40,6 +40,13 @@ describe.only('rpn.js', function () {
 
     it('should evaluate division expressions', function () {
       expect(rpn([12, 4, '/'])).to.be(3);
+      expect(rpn([2, 0, '/'])).to.be(Infinity);
+      expect(rpn([0, 7, '/'])).to.be(0);
+      expect(rpn([4, -2, '/'])).to.be(-2);
+    });
+
+    it('should evaluate nested expressions', function () {
+      expect(rpn([1, 2, '+', 3, '+'])).to.be(6);
     });
   });
 });
