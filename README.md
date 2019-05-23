@@ -6,31 +6,20 @@ JavaScript Training
 Summary
 -------
 
-### Part I: Grammar
+### Basics
 
  1. [Eloquent JavaScript](https://eloquentjavascript.net/index.html) **(book online)**
- 2. [JavaScript Good Parts](http://shop.oreilly.com/product/9780596517748.do) **(buy book)**
+
+### Intermediate
+
+ 1. [JavaScript Good Parts](http://shop.oreilly.com/product/9780596517748.do) **(buy book)**
+ 2. [Functional-Light JavaScript](https://github.com/getify/Functional-Light-JS) **(book online)**
  3. [Async JavaScript](https://pragprog.com/book/tbajs/async-javascript) **(buy book)**
 
-### Part II: Patterns
+### Advanced
 
  1. [JavaScript Patterns](http://shop.oreilly.com/product/9780596806767.do) **(buy book)**
- 2. [Functional-Light JavaScript](https://github.com/getify/Functional-Light-JS) **(book online)**
- 3. [Introduction to Reactive Programming](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) **(book online)**
-
-### Part III: Extensions and Libraries
-
- 1. [ES5](http://speakingjs.com/es5/ch25.html), [ES6 (ES2015)](http://es6-features.org)
- 2. [TypeScript](https://www.typescriptlang.org)
- 3. [Lodash](https://lodash.com/)
- 4. [RxJS](https://github.com/ReactiveX/rxjs)
-
-### Project: Collaborative Book
-
-  * Markdown over Git
-  * Opensource project hosted at Github
-  * Read it online with github.io _(get inspiration from: jekyll, gitbook)_
-  * [Per-Paragraph Comments](http://book.realworldhaskell.org/read/)
+ 2. [Introduction to Reactive Programming](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) **(book online)**
 
 Contents
 --------
@@ -39,20 +28,23 @@ _(3 hours per lesson aprox.)_
 
 ### Introduction
 
-  * [001. Tools](doc/001.md)
-  * [002. Unit Tests](doc/002.md)
+ 1. [Tools](src/lessons/00-development-environment/tools.md)
+ 2. [Unit Tests](src/lessons/00-development-environment/unit-tests.md)
 
-### Grammar
+### Basics
 
-  * [101. Data Types, Expressions and Statements](doc/101.md)
-  * [102. Variables](doc/102.md)
-  * [103. Flow Control](doc/103.md)
-  * Functions
-  * Data Structures: Objects and Arrays
-  * Exception Handling
+ 1. [Data Types](src/lessons/01-data-types/data-types.md)
+ 2. [Statements and Expressions](src/lessons/02-statements-and-expressions/statements-and-expressions.md)
+ 3. [Variables](src/lessons/03-variables/variables.md)
+ 4. [Control Flow](src/lessons/04-control-flow/control-flow.md)
+ 5. Functions
+ 6. Data Structures: Objects and Arrays
+ 7. Exception Handling
 
-### Programming Paradigms
+### Intermediate
 
   * Object Inheritance
   * Higher-Order Functions
   * Asynchronous Programming
+
+### Advanced
